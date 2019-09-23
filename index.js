@@ -15,3 +15,15 @@ var Greeter = (function () {
     return Greeter;
 })();
 var greeter = new Greeter('Victor', 'Lo');
+var Work = (function () {
+    function Work(labTwo) {
+        this.labTwo = labTwo;
+    }
+    Work.prototype.showLab = function () {
+        var row1 = document.getElementById('r2c2');
+        console.log('row1', row1, 'document', document);
+        row1.innerHTML = this.labTwo;
+    };
+    return Work;
+})();
+var work = new Work('MyFirstWebApp');
